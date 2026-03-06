@@ -1,0 +1,30 @@
+
+> stampwallet@0.1.0 build
+> next build
+
+ΓÜá Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\ahmed\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\ahmed\OneDrive\Desktop\Disk\Taabi\stampwallet\package-lock.json
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+
+ΓÜá The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 5.8s
+  Running TypeScript ...
+Failed to compile.
+
+./src/app/api/webhooks/stripe/route.ts:68:22
+Type error: Property 'subscription' does not exist on type 'Invoice'.
+
+  66 |       case "invoice.payment_succeeded": {
+  67 |         const invoice = event.data.object as Stripe.Invoice;
+> 68 |         if (!invoice.subscription) break;
+     |                      ^
+  69 |         
+  70 |         const sub = await stripe.subscriptions.retrieve(
+  71 |           invoice.subscription as string
+Next.js build worker exited with code: 1 and signal: null
