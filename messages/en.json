@@ -1,0 +1,29 @@
+{
+  "Dashboard": {
+    "title": "StampWallet Dashboard",
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "menu": {
+      "dashboard": "Dashboard",
+      "transactions": "Transactions",
+      "customers": "Customers",
+      "campaigns": "Campaigns",
+      "landingPages": "Landing Pages",
+      "settings": "Settings"
+    }
+  },
+  "Landing": {
+    "title": "Digital Loyalty Cards for Modern Businesses",
+    "subtitle": "Issue stamps via Apple Wallet and Google Wallet. Retain your customers without forcing them to download another app. Fast, beautiful, and effortless.",
+    "getStarted": "Get Started for Free",
+    "viewDemo": "View Demo Card",
+    "features": {
+      "nativeWalletTitle": "Native Wallet Support",
+      "nativeWalletDesc": "Customers save your loyalty card directly to their Apple and Google Wallets in less than 30 seconds.",
+      "analyticsTitle": "Customer Analytics",
+      "analyticsDesc": "Understand your audience. Track stamp issuance, redemption rates, and customer visitation frequency.",
+      "retentionTitle": "High Retention",
+      "retentionDesc": "Drive repeat visits by rewarding your best customers with automated rewards and a frictionless experience."
+    }
+  }
+}

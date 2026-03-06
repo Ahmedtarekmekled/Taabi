@@ -1,0 +1,45 @@
+
+> stampwallet@0.1.0 build
+> next build
+
+ΓÜá Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\ahmed\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\ahmed\OneDrive\Desktop\Disk\Taabi\stampwallet\package-lock.json
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+
+ΓÜá The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 2.9s
+  Running TypeScript ...
+  Collecting page data using 15 workers ...
+  Generating static pages using 15 workers (0/6) ...
+  Generating static pages using 15 workers (1/6) 
+  Generating static pages using 15 workers (2/6) 
+  Generating static pages using 15 workers (4/6) 
+Γ£ô Generating static pages using 15 workers (6/6) in 568.2ms
+  Finalizing page optimization ...
+
+Route (app)
+Γöî Γùï /_not-found
+Γö£ ╞Æ /[locale]
+Γö£ ╞Æ /[locale]/dashboard
+Γö£ ╞Æ /[locale]/dashboard/campaigns
+Γö£ ╞Æ /[locale]/dashboard/customers
+Γö£ ╞Æ /[locale]/dashboard/landing
+Γö£ ╞Æ /[locale]/dashboard/settings
+Γö£ ╞Æ /[locale]/dashboard/transactions
+Γö£ ╞Æ /[locale]/enroll
+Γö£ ╞Æ /api/pass/generate
+Γö£ ╞Æ /api/pass/google
+Γöö ╞Æ /api/whatsapp/enroll
+
+
+╞Æ Proxy (Middleware)
+
+Γùï  (Static)   prerendered as static content
+╞Æ  (Dynamic)  server-rendered on demand
+

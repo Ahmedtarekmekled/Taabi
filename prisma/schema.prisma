@@ -1,0 +1,47 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Merchant {
+  id           String    @id @default(uuid())
+  nameEn       String?
+  nameAr       String?
+  email        String    @unique
+  plan         String    @default("STARTER")
+  subdomain    String?   @unique
+  createdAt    DateTime  @default(now())
+  campaigns    Campaign[]
+}
+
+model Campaign {
+  id             String    @id @default(uuid())
+  merchantId     String
+  nameEn         String
+  nameAr         String?
+  stampsRequired Int       @default(10)
+  rewardEn       String
+  rewardAr       String?
+  expiryDays     Int?
+  status         String    @default("DRAFT")
+  
+  merchant       Merchant  @relation(fields: [merchantId], references: [id])
+  passes         Pass[]
+}
+
+model Pass {
+  id            String    @id @default(uuid())
+  campaignId    String
+  customerToken String
+  platform      String    @default("apple")
+  passSerial    String    @unique
+  stampsCount   Int       @default(0)
+  issuedAt      DateTime  @default(now())
+  lastUpdated   DateTime  @default(now())
+  
+  campaign      Campaign  @relation(fields: [campaignId], references: [id])
+}

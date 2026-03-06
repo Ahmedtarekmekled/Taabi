@@ -1,0 +1,29 @@
+{
+  "Dashboard": {
+    "title": "لوحة تحكم StampWallet",
+    "signIn": "تسجيل الدخول",
+    "signOut": "تسجيل الخروج",
+    "menu": {
+      "dashboard": "لوحة التحكم",
+      "transactions": "المعاملات",
+      "customers": "العملاء",
+      "campaigns": "الحملات",
+      "landingPages": "الصفحات المقصودة",
+      "settings": "الإعدادات"
+    }
+  },
+  "Landing": {
+    "title": "بطاقات الولاء الرقمية للأعمال الحديثة",
+    "subtitle": "أصدر الطوابع عبر Apple Wallet و Google Wallet. حافظ على عملائك دون إجبارهم على تنزيل تطبيق آخر. سريع وجميل وبدون عناء.",
+    "getStarted": "ابدأ مجانًا",
+    "viewDemo": "عرض البطاقة التجريبية",
+    "features": {
+      "nativeWalletTitle": "دعم المحافظ الأصلية",
+      "nativeWalletDesc": "يحفظ العملاء بطاقة الولاء الخاصة بك مباشرة في Apple و Google Wallets في أقل من 30 ثانية.",
+      "analyticsTitle": "تحليلات العملاء",
+      "analyticsDesc": "افهم جمهورك. تتبع إصدار الطوابع ومعدلات الاسترداد وتواتر زيارة العملاء.",
+      "retentionTitle": "احتفاظ عالٍ",
+      "retentionDesc": "عزز الزيارات المتكررة من خلال مكافأة أفضل عملائك بمكافآت آلية وتجربة خالية من الاحتكاك."
+    }
+  }
+}
